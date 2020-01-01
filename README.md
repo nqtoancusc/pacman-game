@@ -32,7 +32,7 @@ DEPLOYMENT:
 
 2. SSH to production server:
 
-- ssh to server: ssh <USERNAME>@<PRODUCTION SERVER IP>
+- ssh to server: ssh USERNAME@PRODUCTION_SERVER_IP
 
 3. Go to application folder
 
