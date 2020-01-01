@@ -6,15 +6,15 @@ Look at package.json file to see the current version (Change version number befo
 
 2. Run build
 
-> grunt build
+grunt build
 
 - If we want to test with testbuild (Optional):
 
-> sudo PORT=8501 PORT_HTTPS=8502 HOSTNAME=0.0.0.0 node app/server
+sudo PORT=8501 PORT_HTTPS=8502 HOSTNAME=0.0.0.0 node app/server
 
 OR (run this, the form is disabled)
 
-> ./test-prod-build
+./test-prod-build
 
 ---> TEST LOCALLY (using our phone) AT: https://<LOCAL SERVER IP>:8502
 (<LOCAL SERVER IP> is the IP of my local machine)
@@ -22,13 +22,11 @@ OR (run this, the form is disabled)
 [
 ---> No need to do this debug step, but if we need to do debug:
 Debug with testbuild
-> grunt testbuild
+grunt testbuild
 ]
 
 DEPLOYMENT:
 1. Sync files to PRODUCTION SERVER
-
-./sync-to-server
 
 (Enter password)
 
@@ -40,7 +38,7 @@ DEPLOYMENT:
 
 4. Run forever list to see the ID of the process
 
-> forever list
+forever list
 
 5. Restart the process
 
