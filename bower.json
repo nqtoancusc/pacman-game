@@ -1,0 +1,24 @@
+{
+  "name": "Mentos Pacman",
+  "version": "0.0.0",
+  "authors": [
+    "Nguyen Quoc Toan <toan.nguyen@mfabrik.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-bootstrap": "~0.10.0",
+    "components-font-awesome": "~4.0.3",
+    "angular-bootstrap": "~0.10.0",
+    "angular-route": "~1.2.14",
+    "angular": "~1.2.14",
+    "bootstrap": "~3.1.1",
+    "jquery-hammerjs": "~1.0.6"
+  }
+}

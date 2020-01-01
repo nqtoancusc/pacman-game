@@ -1,0 +1,357 @@
+html { 
+  background: url(/presentations/pacman/register/images/mentos-bg.jpg) no-repeat top center fixed; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: 100% auto;
+  min-height:100%;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #3b429c;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.nonselectable {
+  -webkit-user-select: none;
+  -khtml-user-drag: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+input {
+    color: #3b429c;
+}
+
+@media (min-device-width : 481px) {
+	.register-block {
+		display: block; 
+		margin-top:30%; 
+		margin-left:20px;
+	}
+
+	#phone {
+		background-image: url(/presentations/pacman/register/images/textfield-bg.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		font-size: 2em;
+		font-weight: bold;
+		float: left;
+		border:none;
+		padding-left:20px;
+		width: 391px;
+		height: 58px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+		display: inline-block;
+	}
+
+	#highestScore {
+		background-image: url(/presentations/pacman/register/images/textfield-bg.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		font-size: 2em;
+		font-weight: bold;
+		border:none;
+		padding-left:20px;
+		width: 391px;
+		height: 58px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+		display: inline-block;
+	}
+
+	#btnRegister {
+		background-image: url(/presentations/pacman/register/images/submit-button.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		border:none;
+		width: 60px;
+		height: 60px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+	}
+
+	.sprite-control {
+		color: black;
+		background-image: url(/presentations/pacman/register/images/control-sprite.png);
+		background-repeat: no-repeat;
+		background-size: 310px 312px;
+		vertical-align: middle;
+		display: inline-block;
+		overflow: hidden;
+		line-height: 33px;
+		text-decoration: none;
+		text-align: center;
+		text-indent: -9999px;
+
+	}
+
+	.sprite-control.control-btn {
+		width:  111px;
+		height: 100px;
+		border:none;
+		margin: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.sprite-control.control-btn.btnUp	  { background-position: -99px -0px; float:left}
+	.sprite-control.control-btn.btnLeft	  { background-position: -0px -101px; float:left}
+	.sprite-control.control-btn.btnRight  { background-position: -199px -101px;}
+	.sprite-control.control-btn.btnDown   { background-position: -99px -202px; float:left}
+
+	.sprite-control-transparency {
+		color: black;
+		background-image: url(/presentations/pacman/register/images/control-sprite-transparency.png);
+		background-repeat: no-repeat;
+		background-size: 310px 312px;
+		vertical-align: middle;
+		display: inline-block;
+		overflow: hidden;
+		line-height: 33px;
+		text-decoration: none;
+		text-align: center;
+		text-indent: -9999px;
+
+	}
+
+	.sprite-control-transparency.control-btn-transparency {
+		width:  111px;
+		height: 100px;
+		border:none;
+		margin: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.sprite-control-transparency.control-btn-transparency.btnMiddle	{ background-position: -99px -0px; float:left}
+	.sprite-control-transparency.control-btn-transparency.btnLeft	{ background-position: -0px -101px; float:left}
+	.sprite-control-transparency.control-btn-transparency.btnRight  { background-position: -199px -101px;}
+	.sprite-control-transparency.control-btn-transparency.btnDown   { background-position: -99px -202px; float:left}
+}
+
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+	.register-block {
+		display: block; 
+		margin-top:10%; 
+		margin-left:15px;
+	}
+
+	#phone {
+		background-image: url(/presentations/pacman/register/images/textfield-bg-308x45.png); 
+		background-repeat: no-repeat;
+		background-color: transparent;
+		font-size: 1.6em;
+		font-weight: bold;
+		float: left;
+		border:none;
+		padding-left:10px;
+		width: 208px;
+		height: 43.1px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+		display: inline-block;
+	}
+
+	#highestScore {
+		background-image: url(/presentations/pacman/register/images/textfield-bg-308x45.png); 
+		background-repeat: no-repeat;
+		background-color: transparent;
+		font-size: 1.6em;
+		font-weight: bold;
+		border:none;
+		padding-left:10px;
+		width: 208px;
+		height: 43.1px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+		display: inline-block;
+	}
+
+	#btnRegister {
+		background-image: url(/presentations/pacman/register/images/submit-button-45x45.png);
+		background-repeat: no-repeat;
+		background-color: transparent;
+		border:none;
+		width: 45px;
+		height: 45px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+		display:inline-block;
+  		vertical-align: top;
+	}
+	
+	.sprite-control {
+		color: black;
+		background-image: url(/presentations/pacman/register/images/control-sprite.png);
+		background-repeat: no-repeat;
+		background-size: 232px 233px;
+		vertical-align: middle;
+		display: inline-block;
+		overflow: hidden;
+		line-height: 33px;
+		text-decoration: none;
+		text-align: center;
+		text-indent: -9999px;
+	}
+
+	.sprite-control.control-btn {
+		width:  83.25px;
+		height: 75px;
+		border:none;
+		margin: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.sprite-control.control-btn.btnUp	  { background-position: -74.25px -0px; float:left}
+	.sprite-control.control-btn.btnLeft	  { background-position: -0px -75.75px; float:left}
+	.sprite-control.control-btn.btnRight  { background-position: -149.25px -75.75px;}
+	.sprite-control.control-btn.btnDown   { background-position: -74.25px -151.5px; float:left}
+
+	.sprite-control-transparency {
+		color: black;
+		background-image: url(/presentations/pacman/register/images/control-sprite-transparency.png);
+		background-repeat: no-repeat;
+		background-size: 232px 233px;
+		vertical-align: middle;
+		display: inline-block;
+		overflow: hidden;
+		line-height: 33px;
+		text-decoration: none;
+		text-align: center;
+		text-indent: -9999px;
+
+	}
+
+	.sprite-control-transparency.control-btn-transparency {
+		width:  83.25px;
+		height: 75px;
+		border:none;
+		margin: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.sprite-control-transparency.control-btn-transparency.btnMiddle	{ background-position: -74.25px -0px; float:left}
+	.sprite-control-transparency.control-btn-transparency.btnLeft	{ background-position: -0px -75.75px; float:left}
+	.sprite-control-transparency.control-btn-transparency.btnRight  { background-position: -149.25px -75.75px;}
+	.sprite-control-transparency.control-btn-transparency.btnDown   { background-position: -74.25px -151.5px; float:left}
+}
+
+@media (max-device-width : 319px) {
+	.register-block {
+		display: block; 
+		margin-top:10%; 
+		margin-left:15px;
+	}
+
+	#phone {
+		background-image: url(/presentations/pacman/register/images/textfield-bg-308x45.png);
+		background-color: transparent;
+		font-size: 2em;
+		font-weight: bold;
+		float: left;
+		border:none;
+		padding-left:10px;
+		width: 208px;
+		height: 20px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+		display: inline-block;
+	}
+
+	#highestScore {
+		background-image: url(/presentations/pacman/register/images/textfield-bg-308x45.png);
+		background-color: transparent;
+		font-size: 2em;
+		font-weight: bold;
+		border:none;
+		padding-left:10px;
+		width: 208px;
+		height: 20px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+		display: inline-block;
+	}
+
+	#btnRegister {
+		background-image: url(/presentations/pacman/register/images/submit-button-45x45.png);
+		background-color: transparent;
+		border:none;
+		width: 45px;
+		height: 45px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-webkit-border-radius:0px;
+	}
+	
+	.sprite-control {
+		color: black;
+		background-image: url(/presentations/pacman/register/images/control-sprite.png);
+		background-repeat: no-repeat;
+		background-size: 232px 233px;
+		vertical-align: middle;
+		display: inline-block;
+		overflow: hidden;
+		line-height: 33px;
+		text-decoration: none;
+		text-align: center;
+		text-indent: -9999px;
+	}
+
+	.sprite-control.control-btn {
+		width:  83.25px;
+		height: 75px;
+		border:none;
+		margin: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.sprite-control.control-btn.btnUp	  { background-position: -74.25px -0px; float:left}
+	.sprite-control.control-btn.btnLeft	  { background-position: -0px -75.75px; float:left}
+	.sprite-control.control-btn.btnRight  { background-position: -149.25px -75.75px;}
+	.sprite-control.control-btn.btnDown   { background-position: -74.25px -151.5px; float:left}
+
+	.sprite-control-transparency {
+		color: black;
+		background-image: url(/presentations/pacman/register/images/control-sprite-transparency.png);
+		background-repeat: no-repeat;
+		background-size: 232px 233px;
+		vertical-align: middle;
+		display: inline-block;
+		overflow: hidden;
+		line-height: 33px;
+		text-decoration: none;
+		text-align: center;
+		text-indent: -9999px;
+
+	}
+
+	.sprite-control-transparency.control-btn-transparency {
+		width:  83.25px;
+		height: 75px;
+		border:none;
+		margin: 0px;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+	}
+	.sprite-control-transparency.control-btn-transparency.btnMiddle	{ background-position: -74.25px -0px; float:left}
+	.sprite-control-transparency.control-btn-transparency.btnLeft	{ background-position: -0px -75.75px; float:left}
+	.sprite-control-transparency.control-btn-transparency.btnRight  { background-position: -149.25px -75.75px;}
+	.sprite-control-transparency.control-btn-transparency.btnDown   { background-position: -74.25px -151.5px; float:left}
+}
+

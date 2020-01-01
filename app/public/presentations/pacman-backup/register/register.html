@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENTOS PACMAN</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link type="text/css" rel="stylesheet" href="/presentations/pacman/register/css/style.css" />
+</head>
+<body class="nonselectable">
+	<div id="content-wrapper" class="nonselectable">
+		<div>
+			<div>
+				<h1>MENTOS PACMAN</h1>
+			</div>
+			<div id="body" class="nonselectable">
+				<div id="register">
+					<div>
+						<input type="text" id="phone" name="phone" placeholder="Phone" maxlength="20" />
+						<input id="btnRegister" type="button" value="Send" />
+					</div>
+				</div>
+				<div id="queue" class="hidden">
+					<span>Your are in waiting list.</span>
+					<span id="queueMsg"></span>
+				</div>
+				<div id="play" class="hidden" class="nonselectable">
+					<input type="button" id="btnLeft" value="Left" class="nonselectable"/>
+					<input type="button" id="btnUp" value="Up" class="nonselectable"/>
+					<input type="button" id="btnDown" value="Down" class="nonselectable"/>
+					<input type="button" id="btnRight" value="Right" class="nonselectable"/>
+				</div>
+				<div id="gameover" class="hidden">
+					GAME OVER
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="lib/qrremote-toolkit/signals-remote.js"></script>
+	<script type="text/javascript" src="/presentations/pacman/register/js/script.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</body>
+</html>

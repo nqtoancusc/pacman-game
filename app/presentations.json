@@ -1,0 +1,21 @@
+{
+	"defaultScheme": "pacman",
+	"presentations": [
+		{
+			"scheme": "pacman",
+			"token": "pacman"
+		},
+		{
+			"scheme": "pacman",
+			"token": "pacman2"
+		},
+		{
+			"scheme": "pacman",
+			"token": "pacman3"
+		},
+		{
+			"scheme": "pacman",
+			"token": "pacman4"
+		}
+	]
+}

@@ -1,0 +1,19 @@
+html { 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: 100% auto;
+  min-height:100%;
+}
+
+h4, h2 {
+    color: #3b429c;
+}
+
+h3 {
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}

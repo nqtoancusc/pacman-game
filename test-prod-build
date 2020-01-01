@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Build app first with "grunt build"
+
+PORT=8501 HOSTNAME=0.0.0.0 DB=<DB SERVER NAME> node app/server

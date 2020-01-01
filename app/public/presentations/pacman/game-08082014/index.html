@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="robots" content="index, nofollow">
+<base href="presentations/pacman/game/" target="_blank">
+<link href="css/styles.css" type="text/css" rel="stylesheet" media="all">
+<title>Mentos - Pelaa Ment Menia ja voita!</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="wrapper-inner">
+      <div class="container">
+      
+        <div id="logo"></div>
+        
+        <div id="best_results" class="center">Paras tulos<br><span id="best_score" class="yellow">0</div>
+        
+        <div id="game">
+          <!--iframe id="iframe-game" src="game/index.html" frameborder="0" allowtransparency="true" allowfullscreen="" scrolling="no" noresize="noresize"></iframe-->
+          <iframe id="iframe-game" src="/iframe" frameborder="0" allowtransparency="true" allowfullscreen="" scrolling="no" noresize="noresize"></iframe>
+
+        </div>
+        
+        <div id="next_player" class="center">Seuraava pelaaja: <span id="next_player_id" class="yellow"></span></div>
+        
+        <div id="read_qr" class="center">Lue <span class="yellow">koodi</span> ja pelaa <div class="arrow"></div></div>
+        
+        <div id="qr_title">skriini.fi</div>
+        
+        <div id="qr_code"></div>
+        
+      </div>
+    </div>
+  </div>
+  <script src="game/jquery-2.0.0.min.js"></script>
+  <script type="text/javascript" src="js/signals-screen.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</body>
+</html>

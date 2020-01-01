@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% block offbtn %}
+{% endblock %}
+{% block body %}
+	<p>Syötä ruudulla näkyvä koodi!</p>
+	<div id="enter-code">
+		<div id="code-form-wrapper">
+			<form method="GET" action="/" id="code">
+				<input type="hidden" name="o" value="f" />
+				<input type="text" name="code" placeholder="Koodi" maxlength="10" />
+				<input type="submit" value="OK" />
+				{% if validationErrors.code %}
+				<p class="validation-error">Koodia ei tunnistettu</p>
+				{% endif %}
+			</form>
+		</div>
+	</div>
+{% endblock %}

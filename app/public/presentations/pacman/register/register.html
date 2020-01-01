@@ -1,0 +1,123 @@
+<!doctype html>
+
+<html>
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="/presentations/pacman/register/images/favicon.png" />
+
+<link href="/presentations/pacman/register/css/styles.css" type="text/css" rel="stylesheet" media="all">
+
+<title>MentMen</title>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+    
+    <div class="container">
+        
+        <div id="content">
+            <div id="register">            
+                <h1>Tervetuloa pelaamaan!</h1>
+                
+                <div class="form">
+                        <div id="phone-block">
+                            <div>
+                                <p>Annathan puhelinnumerosi,<br>josta tavoitamme sinut, mikäli voitat!</p>
+                            </div>
+                            <div class="field">
+                                <input type="text" class="phonenumber" id="phone" name="phone" placeholder="0X0-XXXXXXX">
+                            </div>
+
+                            <div class="field submit">
+                                <input type="button" class="submit" id="btnRegister" name="btnRegister" value="">
+                            </div>
+                        </div>
+                        <div class="clear"><!-- CLEAR --></div>
+
+                        <div>
+                            <p><span id="invalidMsg" style="color:#FFE001;"></span></p>
+                        </div>
+                        
+                        <div id="score-block">
+                            <div>
+                                <p id="lbHighestScore">Syötä tämän hetkinen paras tulos. Löydät sen isolta näytöltä. Tällä varmistamme, että olet näytön läheisyydessä.</p>
+                            </div>
+                            <div class="field" id="highestScoreField">
+                                <input type="text" id="highestScore" name="highestScore" placeholder="XXXX" maxlength="20" />
+                            </div>
+                            <div class="field submit">
+                                <input type="button" class="submit" id="btnHighestScore" name="btnHighestScore" value="">
+                            </div>
+                            <div>
+                                <p><span id="invalidHighestScoreMsg" style="color:#FFE001;"></span></p>
+                            </div>
+                        </div>
+
+                        <div class="clear"><!-- CLEAR --></div>
+                    
+                </div>
+            </div>
+
+            <div id="queue" class="hidden">
+                <h1>Olet nyt pelijonossa!</h1>
+                
+                <br>
+                
+                <p>Jonotusnumerosi on <span id="playerID" class="enhanced" style="color:#FFE001;"></span>.</p>
+                <!--p>Edelläsi on 12 pelaajaa. Odotathan hetkisen.</p-->
+                <p><span id="queueMsg"></span></p>
+            </div>
+
+            <div id="play" class="hidden nonselectable">
+                
+                <p>Ohjaa peliä nuolinäppäimillä</p>
+                
+                <br>
+                
+                <div class="controls nonselectable">
+                    <div class="top">
+                        <div class="control up nonselectable" id="btnUp"></div>
+                    </div>
+                    
+                    <div class="bottom nonselectable">
+                        <div class="control left nonselectable" id="btnLeft"></div>
+                        <div class="control down nonselectable" id="btnDown"></div>
+                        <div class="control right nonselectable" id="btnRight"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gameover" class="hidden">
+                
+                <h1>Kiitos!</h1>
+                
+                <h2>Toivottavasti oli kivaa!</h2>
+                
+                <br>
+                <p><span>Pelaajanumerosi on</span> <span id="gameoverPlayerID" class="enhanced"></span></p>
+                <p>pisteet <span id="score" class="enhanced">0</span></p>
+                
+                <p>Käy pelaamassa lisää sekä osallistumassa arvontaan osoitteessa <a href="http://mentoskisa.fi">mentoskisa.fi</a>.</p>
+                
+            </div>
+
+        </div>
+        
+    </div>
+    
+</div>
+<script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="/js/jquery.geohelper.js"></script>
+<script type="text/javascript" src="/js/geoPosition.js"></script>
+<script type="text/javascript" src="lib/qrremote-toolkit/signals-remote.js"></script>
+<script type="text/javascript" src="/presentations/pacman/register/js/script.js"></script>
+<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</body>
+
+</html>

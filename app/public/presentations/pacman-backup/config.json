@@ -1,0 +1,34 @@
+{
+    "schemename": "pacman",
+    "include": {
+        "screen": {
+            "js": [
+                "js/jquery-1.11.0.js",
+                "js/jquery-ui-1.10.4.custom.js",
+                "lib/bootstrap-3.1.1/js/bootstrap.js",
+                "lib/qrremote-toolkit/signals-screen.js",
+                "lib/qrremote-toolkit/qr-code.js",
+                "lib/qrremote-toolkit/qr-pong.js",
+                "presentations/pacman/screen/js/pong.js",
+                "presentations/pacman/screen/js/script.js"
+            ],
+            "css": [
+                "lib/bootstrap-3.1.1/css/bootstrap.css",
+                "presentations/pacman/screen/css/font.css",
+                "presentations/pacman/screen/css/style.css"
+            ]
+        },
+        "remote": {
+            "js": [
+                "js/jquery-1.11.0.js",
+                "lib/qrremote-toolkit/signals-remote.js",
+                "bower_components/hammerjs/hammer.js",
+                "bower_components/jquery-hammerjs/jquery.hammer.js",
+                "presentations/pacman/remote/js/script.js"
+            ],
+            "css": [
+                "presentations/pacman/remote/css/style.css"
+            ]
+        }
+    }
+}

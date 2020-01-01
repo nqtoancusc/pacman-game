@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MENTOS PACMAN</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<!-- build:style pacman_remote -->
+	{% for path in include.remote.css %}
+	<link type="text/css" rel="stylesheet" href="/{{ path }}" />
+	{%- endfor %}
+	<!-- /build -->
+	{% block head %}
+	{% endblock %}
+</head>
+<body>
+	<div id="content-wrapper">
+		<div id="controls" data-action="pacman" class="controls-group">
+			<div id="header">
+				<h1>MENTOS PACMAN</h1>
+				{% block headerExtra %}
+				{% endblock %}
+			</div>
+			<div id="body">
+				{% block body %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+	<!-- build:remove -->
+	<script type="text/javascript">
+		var script = document.createElement('script');
+		script.setAttribute("type", "text/javascript");
+		script.src = "//" +  window.location.hostname + ":35729/livereload.js";
+		document.body.appendChild(script);
+	</script>
+	<!-- /build -->
+	{% if addTracking %}
+	{% include 'tpl/googleTagManager.html' %}
+	{% endif %}
+</body>
+</html>

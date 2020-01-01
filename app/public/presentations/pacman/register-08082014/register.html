@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MentMen</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=NO" />
+	<link type="text/css" rel="stylesheet" href="/presentations/pacman/register/css/style.css" />
+</head>
+<body class="nonselectable">
+	<div id="content-wrapper" class="nonselectable">
+		<div>
+			<div id="body" class="nonselectable">
+				<div id="register">
+					<div>
+						<h2>Tervetuloa pelaamaan</h2>
+					</div>
+					<div>
+						<h3>Anna puhelinnumerosi,<br/>josta tavoitamme sinut, mikäli voitat:</h3>
+					</div>
+					<div class="register-block">
+						<p>
+							<input type="text" id="phone" name="phone" placeholder="0X0-XXXXXXX" maxlength="20" />
+							<input id="btnRegister" type="button" value="" />
+							<h3><span id="invalidMsg" style="color:#FFE001;"></span></h3>
+						</p>
+						<p>
+							<input type="text" id="highestScore" name="highestScore" class="hidden" placeholder="XXXX" maxlength="20" />
+							<h3><span id="invalidHighestScoreMsg" style="color:#FFE001;"></span></h3>
+							<h4 id="lbHighestScore" class="hidden">Syötä tämän hetkinen paras tulos. Löydät sen isolta näytöltä. Tällä varmistamme, että olet näytön läheisyydessä.</h4>
+						</p>
+					</div>
+				</div>
+				<div id="queue" class="hidden">
+					<div>
+						<h2>Olet nyt pelijonossa!</h2>
+					</div>
+					<div>
+						<h3><span>Pelaajanumerosi on</span> <span id="playerID" style="color:#FFE001; font-size:2em; font-weight:bold"></span></h3>
+						<h3><span id="queueMsg"></span></h3>
+					</div>
+				</div>
+				<div id="play" class="hidden nonselectable">
+					<div>
+						<h2>Ohjaa peliä nuolinäppäimillä</h2>
+					</div>
+					<div style="white-space: nowrap; margin-left: 10%; margin-top: 20%">
+						<div style="white-space: nowrap;">
+							<span class="sprite-control-transparency control-btn-transparency btnLeft nonselectable"></span>
+							<span class="sprite-control control-btn btnUp nonselectable" id="btnUp"></span>
+							<span class="sprite-control-transparency control-btn-transparency btnRight nonselectable"></span>
+						</div>
+						<div style="white-space: nowrap;">
+							<span class="sprite-control control-btn btnLeft nonselectable" id="btnLeft"></span>
+							<span class="sprite-control-transparency control-btn-transparency btnMiddle nonselectable"></span>
+							<span class="sprite-control control-btn btnRight nonselectable" id="btnRight"></span>
+						</div>
+						<div style="white-space: nowrap;">
+							<span class="sprite-control-transparency control-btn-transparency btnLeft nonselectable"></span>
+							<span class="sprite-control control-btn btnDown nonselectable" id="btnDown"></span>
+							<span class="sprite-control-transparency control-btn-transparency btnRight nonselectable"></span>
+						</div>
+					</div>
+				</div>
+				<div id="gameover" class="hidden">
+					<div>
+						<h2>Kiitos</h2>
+					</div>
+					<div>
+						<h3>Toivottavasti oli kivaa!</h3>
+					</div>
+					<div>
+						<h3><span>Pelaajanumerosi on</span> <span id="gameoverPlayerID" style="color:#FFE001; font-size:2em; font-weight:bold"></span></h3>
+						<h3>pisteet <span id="score" style="color:#FFE001; font-size:2em; font-weight:bold">0</span></h3>
+					</div>
+					<div>
+						<h4>Käy pelaamassa lisää sekä osallistumassa arvontaan osoitteessa <a href="http://mentoskisa.fi" style="background-color:#3A429C;color:#fff">mentoskisa.fi</a></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="/js/jquery.geohelper.js"></script>
+	<script type="text/javascript" src="/js/geoPosition.js"></script>
+	<script type="text/javascript" src="lib/qrremote-toolkit/signals-remote.js"></script>
+	<script type="text/javascript" src="/presentations/pacman/register/js/script.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</body>
+</html>
